@@ -59,7 +59,7 @@ body{
   color:black;
   background:rgba(243,154,30,.12);
   font-size: 18px;
-  transition: color 0.3s ease, background 0.3s ease, font-size 0.3s ease;
+  transition: color 0.5s ease, background 0.5s ease, font-size 0.5s ease;
 }
 
 /* 当前页反馈 */

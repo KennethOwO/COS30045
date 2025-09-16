@@ -155,3 +155,7 @@ p{ line-height:1.6 }
 
 /* 防止横向滚动条闪现 */
 html, body { overflow-x: hidden; }
+
+.home-img{
+  width:700px;
+}

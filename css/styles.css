@@ -35,7 +35,9 @@ body{
 .nav__logo{
   display:flex; align-items:center; gap:10px; text-decoration:none;
 }
+
 .nav__logo img{ width:36px; height:36px; display:block }
+
 .nav__logo:hover{ transform:scale(1.02); transition:transform .15s ease }
 
 .nav__links{
@@ -69,7 +71,7 @@ body{
 }
 
 /* 点击瞬间小动效（JS 会加 is-pressed） */
-.nav__links a.is-pressed{ transform:translateY(1px) }
+.nav__links a.is-pressed{ transform:translateY(100px) }
 
 /* 简单主内容 */
 main{ padding:28px 0 }

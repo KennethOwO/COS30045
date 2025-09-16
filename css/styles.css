@@ -58,7 +58,8 @@ body{
 .nav__links a:focus-visible{
   color:black;
   background:rgba(243,154,30,.12);
-  font-size: 20px;
+  font-size: 16px;
+  transition: color 0.3s ease, background 0.3s ease, font-size 0.3s ease;
 }
 
 /* 当前页反馈 */

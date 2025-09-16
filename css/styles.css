@@ -156,9 +156,9 @@ p{ line-height:1.6 }
 /* 防止横向滚动条闪现 */
 html, body { overflow-x: hidden; }
 
-.home-img{
+main .home-img{
   width: 700px;
-  margin: 50px auto 30px auto;
+  margin: 50px auto 30px;
   display: block;         /* 确保不受行内元素影响 */
   margin: 0 auto;         /* 让图片居中（可选） */
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7); /* 阴影真正生效 */

@@ -91,3 +91,37 @@ p{ line-height:1.6 }
 @media (max-width:640px){
   .nav__links{ gap:10px }
 }
+
+/* ==== Page Transition 基础 ==== */
+.page {
+  will-change: transform, opacity;
+}
+
+/* 进入动画（根据方向） */
+.page.enter-from-right { animation: slideInFromRight 320ms ease both; }
+.page.enter-from-left  { animation: slideInFromLeft  320ms ease both;  }
+
+/* 退出动画（根据方向） */
+.page.exit-to-left  { animation: slideOutToLeft  280ms ease both; }
+.page.exit-to-right { animation: slideOutToRight 280ms ease both; }
+
+/* 关键帧 */
+@keyframes slideInFromRight {
+  from { transform: translateX(100%); opacity: .6; }
+  to   { transform: translateX(0);    opacity: 1;  }
+}
+@keyframes slideInFromLeft {
+  from { transform: translateX(-100%); opacity: .6; }
+  to   { transform: translateX(0);     opacity: 1;  }
+}
+@keyframes slideOutToLeft {
+  from { transform: translateX(0);     opacity: 1;  }
+  to   { transform: translateX(-12%);  opacity: 0;  }
+}
+@keyframes slideOutToRight {
+  from { transform: translateX(0);     opacity: 1;  }
+  to   { transform: translateX(12%);   opacity: 0;  }
+}
+
+/* 防止横向滚动条闪现 */
+html, body { overflow-x: hidden; }

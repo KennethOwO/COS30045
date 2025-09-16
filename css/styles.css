@@ -79,6 +79,22 @@ body{
   background:var(--active-underline); border-radius:3px;
 }
 
+.site-footer {
+  background: var(--brand-bg);
+  border-top: 2px solid rgba(122,90,46,.15);
+  box-shadow: var(--shadow);
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  color: var(--text);
+  margin-top: 40px;
+}
+.site-footer .ack {
+  display: block;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
 /* 简单主内容 */
 main{ padding:28px 0 }
 h1{ margin:0 0 12px }

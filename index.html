@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EnergyWise TVs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="topbar" role="banner">
+    <!-- Inline SVG power logo (click → Home) -->
+    <a href="#home" id="logo" class="logo" aria-label="Go to Home" title="Home">
+      <!-- Simple power icon in brand green -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="logo-svg">
+        <path d="M12 2v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M5.2 6.8a8 8 0 1 0 13.6 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="brand">EnergyWise</span>
+    </a>
+
+    <nav class="nav" role="navigation" aria-label="Primary">
+      <button class="nav-link active" data-target="home" aria-current="page">Home</button>
+      <button class="nav-link" data-target="televisions">Televisions</button>
+      <button class="nav-link" data-target="about">About Us</button>
+    </nav>
+  </header>
+
+  <!-- Main Content (Single Page App-style sections) -->
+  <main id="app" class="container" role="main">
+    <!-- HOME -->
+    <section id="home" class="page visible" data-page="home" tabindex="-1">
+      <h1>Welcome to EnergyWise</h1>
+      <p>
+        Explore how <strong>appliance energy consumption</strong> impacts bills and the environment.
+        In Australia, televisions are labelled with a <em>star rating</em> under the
+        <abbr title="Minimum Energy Performance Standards">MEPS</abbr> program to help compare efficiency.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h2>What is a Star Rating?</h2>
+          <p>The more stars, the more energy-efficient the model is compared to similar products. Star Ratings help you
+            estimate running costs and environmental impact.</p>
+        </article>
+
+        <article class="card">
+          <h2>Energy Tips</h2>
+          <ul>
+            <li>Use <strong>energy-saving modes</strong> and adjust brightness sensibly.</li>
+            <li>Prefer models with higher <strong>Star Rating Index</strong> (SRI) for long-term savings.</li>
+            <li>Turn devices fully off instead of leaving on standby when not in use.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Did You Know?</h2>
+          <p>Screen size, panel tech, and settings influence TV power draw. Two TVs of the same size can use different
+            amounts of energy depending on efficiency and calibration.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TELEVISIONS -->
+    <section id="televisions" class="page" data-page="televisions" tabindex="-1" aria-labelledby="televisions-title">
+      <h1 id="televisions-title">Televisions: Compare & Explore</h1>
+      <p>Use the controls to filter and sort this <em>placeholder</em> dataset of TVs relevant to the Australian market.</p>
+
+      <div class="toolbar" role="region" aria-label="Filters">
+        <label>
+          Screen size:
+          <select id="sizeFilter">
+            <option value="all">All</option>
+            <option value="<=43">≤ 43"</option>
+            <option value="44-55">44–55"</option>
+            <option value=">=56">≥ 56"</option>
+          </select>
+        </label>
+
+        <label>
+          Sort by:
+          <select id="sortBy">
+            <option value="brand">Brand</option>
+            <option value="size">Size (inches)</option>
+            <option value="power">Typical Power (W)</option>
+            <option value="stars">Star Rating</option>
+          </select>
+        </label>
+
+        <button id="resetBtn" class="btn">Reset</button>
+      </div>
+
+      <div class="table-wrap" role="region" aria-label="Television comparison table">
+        <table id="tvTable">
+          <thead>
+            <tr>
+              <th scope="col">Brand</th>
+              <th scope="col">Model</th>
+              <th scope="col">Size (")</th>
+              <th scope="col" title="Typical viewing power (approx.)">Typical Power (W)</th>
+              <th scope="col" title="Star rating label (placeholder data)">Star Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <details class="note">
+        <summary>About this data</summary>
+        <p>
+          The values shown here are <strong>placeholder figures</strong> for demonstration of interactivity only.
+          For real purchases in Australia, compare official energy labels and retailer specifications, and check the latest MEPS guidelines.
+        </p>
+      </details>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page" data-page="about" tabindex="-1">
+      <h1>About Us</h1>
+      <p>
+        <strong>EnergyWise</strong> is a simple demo site showing how HTML, CSS, and JavaScript can work together
+        to build a small, accessible, and interactive experience focused on appliance energy consumption topics.
+      </p>
+      <ul>
+        <li>Three pages managed via JavaScript (no full page reloads)</li>
+        <li>Logo click → Home</li>
+        <li>Hover & active feedback in the top navigation</li>
+        <li>CSS theming aligned with the power logo’s colours</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <p>
+      <span id="year"></span> © <span id="ownerName">Teng Yong Goh</span>.
+      Built with HTML, CSS &amp; JavaScript.
+      GenAI acknowledgement: parts of code/content were assisted by ChatGPT.
+    </p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

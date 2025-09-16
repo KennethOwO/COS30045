@@ -38,7 +38,7 @@ body{
 
 .nav__logo img{ width:36px; height:36px; display:block }
 
-.nav__logo:hover{ transform:scale(1.02); transition:transform .15s ease }
+.nav__logo:hover{ transform:scale(2); transition:transform .15s ease }
 
 .nav__links{
   list-style:none; margin:0; padding:0; display:flex; gap:18px;

@@ -6,7 +6,7 @@
   --link: #6b4f2a;
   --link-hover: #f39a1e;
   --active-underline: #f39a1e;
-  --shadow: 0 2px 10px rgba(0,0,0,.06);
+  --shadow: 0 4px 16px rgba(0,0,0,.2);
 }
 
 *{box-sizing:border-box}

@@ -17,8 +17,6 @@
       const links = mount.querySelectorAll('.nav__links a');
       links.forEach(a => {
         if (a.dataset.route === route) a.classList.add('is-active');
-        // 轻微的“动态切换”动画：点击时给个波纹/按压感（纯 CSS 配合）
-        a.addEventListener('click', () => a.classList.add('is-pressed'));
       });
 
       // 点击左上角图标回到首页（已是 <a href="index.html">，这里可选增强）

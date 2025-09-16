@@ -70,12 +70,6 @@ body{
   background:var(--active-underline); border-radius:3px;
 }
 
-/* 点击瞬间小动效（JS 会加 is-pressed） */
-.nav__links a.is-pressed {
-  transform: scale(0.5);          /* 缩小到 50% */
-  transition: transform 0.08s ease;
-}
-
 /* 简单主内容 */
 main{ padding:28px 0 }
 h1{ margin:0 0 12px }

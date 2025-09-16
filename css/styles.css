@@ -157,10 +157,9 @@ p{ line-height:1.6 }
 html, body { overflow-x: hidden; }
 
 .home-img{
-  padding-top:50px;
-  padding-bottom:30px;
   width: 700px;
+  margin: 50px auto 30px auto;
   display: block;         /* 确保不受行内元素影响 */
   margin: 0 auto;         /* 让图片居中（可选） */
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.9); /* 阴影真正生效 */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7); /* 阴影真正生效 */
 }
